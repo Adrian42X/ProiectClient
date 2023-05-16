@@ -10,9 +10,11 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { NzTableModule } from 'ng-zorro-antd/table';
+import { AddMovieComponent } from '../home/add-movie/add-movie.component';
+import { DetailsComponent } from '../home/details/details.component';
 
 @NgModule({
-  declarations: [HomeComponent,LoginComponent,RegisterComponent],
+  declarations: [HomeComponent,LoginComponent,RegisterComponent,AddMovieComponent,DetailsComponent],
   imports: [
     CommonModule,
     ProjectRoutingModule,
