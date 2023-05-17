@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit{
 
   openAddDialog(){
     this.dialogRef.open(AddMovieComponent);
+    this.movieService.getMovies().subscribe((items=>{this.movies=items}));
   }
 
   editMovie(movie:Movie){

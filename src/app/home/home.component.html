@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <button class="add-button" mat-raised-button (click)="openAddDialog()">Add New Movie</button>
 <nz-table #basicTable [nzData]="movies" class="table">
   <thead>
@@ -32,41 +31,5 @@
     </tr>
   </tbody>
 </nz-table>
-=======
-<div class="table-container">
-  <nz-table #basicTable [nzData]="movies" class="table">
-    <thead>
-      <tr>
-        <th>Main Actor</th>
-        <th>Image</th>
-        <th>Title</th>
-        <th>Category</th>
-        <th>Rating</th>
-        <th>Edit</th>
-        <th>Delete</th>
-        <th>Details</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let movie of basicTable.data">
-        <td>{{movie.MainActor}}</td>
-        <td>{{movie.ReleaseYear}}</td>
-        <td>{{movie.Title}}</td>
-        <td>{{movie.Category}}</td>
-        <td>{{movie.Rating}}</td>
-        <td>
-          <span nz-icon nzType="edit" nzTheme="twotone" class="edit-icon" (click)="editMovie(movie)"></span>
-        </td>
-        <td>
-          <span nz-icon nzType="delete" nzTheme="twotone" class="delete-icon" (click)="deleteMovie(movie)"></span>
-        </td>
-        <td>
-          <span nz-icon nzType="info" nzTheme="outline" class="details-icon" (click)="showDetails(movie)"></span>
-        </td>
-      </tr>
-    </tbody>
-  </nz-table>
-  
-  <button class="add-button" mat-raised-button (click)="openAddDialog()">Add New Movie</button>
-</div>
->>>>>>> Stashed changes
+
+

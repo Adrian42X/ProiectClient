@@ -25,7 +25,7 @@ export class EditMovieComponent implements OnInit{
 
   onSubmit(){
     if(this.data!=this.editMovie){
-      this.movieService.editMovie(this.editMovie);
+      this.movieService.editMovie(this.editMovie).subscribe();
       console.log("Movie edit succes");
     }
   }

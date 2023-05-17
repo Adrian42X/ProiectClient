@@ -18,7 +18,7 @@ body {
     padding: 30px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-image: url('D:\DAWM PROJECT\ProiectClient\src\assets\images.jpg');
+    background-image: url('C:\Users\adria\Desktop\sem II\Angular CSTac\Proiect\ProiectClient\src\assets\images.jpg');
     max-width: 400px; /* Adjust the maximum width as needed */
     width: 100%; /* Take up the full width available */
   }
