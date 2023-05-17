@@ -1,0 +1,37 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f8ff; /* Light blue background color */
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .add-button {
+    background-color: #007bff; /* Blue button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add-button:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+  }
+  
+  .edit-icon,
+  .delete-icon,
+  .details-icon {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .edit-icon:hover,
+  .delete-icon:hover,
+  .details-icon:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
