@@ -1,8 +1,8 @@
 export interface Movie{
-    Id:number;
-    MainActor:string;
-    ReleaseYear:number;
-    Title:string;
-    Category:string;
-    Rating:number
+    id:number;
+    mainActor:string;
+    releaseYear:number;
+    title:string;
+    category:string;
+    rating:number
 }

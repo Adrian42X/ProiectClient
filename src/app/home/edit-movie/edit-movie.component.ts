@@ -10,12 +10,12 @@ import { MovieService } from 'src/app/services/movie.service';
 })
 export class EditMovieComponent implements OnInit{
   editMovie:Movie={
-    Title: '',
-    Id: 0,
-    MainActor: '',
-    ReleaseYear: 0,
-    Category: '',
-    Rating: 0
+    title: '',
+    id: 0,
+    mainActor: '',
+    releaseYear: 0,
+    category: '',
+    rating: 0
   }
 
   constructor(@Inject(MAT_DIALOG_DATA) public data:Movie,private movieService:MovieService){}
@@ -24,8 +24,10 @@ export class EditMovieComponent implements OnInit{
   }
 
   onSubmit(){
-    if(this.data!=this.editMovie)
+    if(this.data!=this.editMovie){
       this.movieService.editMovie(this.editMovie);
+      console.log("Movie edit succes");
+    }
   }
 
   stopPropagation(event: MouseEvent) {

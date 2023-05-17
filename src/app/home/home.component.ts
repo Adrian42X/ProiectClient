@@ -4,6 +4,7 @@ import { MovieService } from '../services/movie.service';
 import { MatDialog } from '@angular/material/dialog';
 import { EditMovieComponent } from './edit-movie/edit-movie.component';
 import { DetailsComponent } from './details/details.component';
+import { AddMovieComponent } from './add-movie/add-movie.component';
 
 @Component({
   selector: 'app-home',
@@ -16,11 +17,11 @@ export class HomeComponent implements OnInit{
   constructor(private movieService:MovieService,private dialogRef:MatDialog){}
 
   ngOnInit(): void {
-    this.movies=this.movieService.getMovies();
+    this.movieService.getMovies().subscribe((items=>{this.movies=items}));
   }
 
   openAddDialog(){
-
+    this.dialogRef.open(AddMovieComponent);
   }
 
   editMovie(movie:Movie){
@@ -28,8 +29,7 @@ export class HomeComponent implements OnInit{
   }
 
   deleteMovie(movie:Movie){
-    this.movieService.deleteMovie(movie);
-    this.movies=this.movieService.getMovies();
+    this.movieService.deleteMovie(movie).subscribe();
     console.log(this.movies);
   }
 

@@ -9,7 +9,7 @@ import { Movie } from 'src/app/models/movie';
 })
 export class DetailsComponent implements OnInit{
   
-  movie:Movie={Id:0,Title:'',Rating:0,ReleaseYear:0,Category:'',MainActor:''};
+  movie:Movie={id:0,title:'',rating:0,releaseYear:0,category:'',mainActor:''};
   constructor(@Inject(MAT_DIALOG_DATA) public data:Movie){}
   ngOnInit(): void {
     this.movie=this.data;

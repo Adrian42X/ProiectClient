@@ -1,27 +1,27 @@
 <form (ngSubmit)="onSubmit()" (click)="stopPropagation($event)">
     <div>
       <label>Title:</label>
-      <input type="text" id="title" [(ngModel)]="editMovie.Title" name="Title" required>
+      <input type="text" id="title" [(ngModel)]="editMovie.title" name="Title" required>
     </div>
   
     <div>
       <label>Category:</label>
-      <input type="text" id="category" [(ngModel)]="editMovie.Category" name="Category" required>
+      <input type="text" id="category" [(ngModel)]="editMovie.category" name="Category" required>
     </div>
   
     <div>
       <label>Release Year:</label>
-      <input type="number" id="year" [(ngModel)]="editMovie.ReleaseYear" name="ReleaseYear" required>
+      <input type="number" id="year" [(ngModel)]="editMovie.releaseYear" name="ReleaseYear" required>
     </div>
 
     <div>
         <label>Rating:</label>
-        <input type="number" id="rating" [(ngModel)]="editMovie.Rating" name="Rating" required>
+        <input type="number" id="rating" [(ngModel)]="editMovie.rating" name="Rating" required>
       </div>
 
       <div>
         <label>Main actor:</label>
-        <input type="text" id="actor" [(ngModel)]="editMovie.MainActor" name="MainActor" required>
+        <input type="text" id="actor" [(ngModel)]="editMovie.mainActor" name="MainActor" required>
       </div>
   
     <button type="submit">Edit</button>
