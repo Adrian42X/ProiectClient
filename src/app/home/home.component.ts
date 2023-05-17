@@ -3,6 +3,7 @@ import { Movie } from '../models/movie';
 import { MovieService } from '../services/movie.service';
 import { MatDialog } from '@angular/material/dialog';
 import { EditMovieComponent } from './edit-movie/edit-movie.component';
+import { DetailsComponent } from './details/details.component';
 
 @Component({
   selector: 'app-home',
@@ -32,4 +33,7 @@ export class HomeComponent implements OnInit{
     console.log(this.movies);
   }
 
+  showDetails(movie:Movie){
+    this.dialogRef.open(DetailsComponent, {data:movie});
+  }
 }

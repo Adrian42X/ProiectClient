@@ -9,6 +9,7 @@
       <th>Rating</th>
       <th>Edit</th>
       <th>Delete</th>
+      <th>Details</th>
     </tr>
   </thead>
   <tbody>
@@ -23,6 +24,9 @@
       </td>
       <td>
         <span nz-icon nzType="delete" nzTheme="twotone" class="delete-icon" (click)="deleteMovie(movie)"></span>
+      </td>
+      <td>
+        <span nz-icon nzType="info" nzTheme="outline" class="details-icon" (click)="showDetails(movie)"></span>
       </td>
     </tr>
   </tbody>

@@ -14,9 +14,10 @@ import { AddMovieComponent } from '../home/add-movie/add-movie.component';
 import { DetailsComponent } from '../home/details/details.component';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import {MatDialogModule} from '@angular/material/dialog';
+import { EditMovieComponent } from '../home/edit-movie/edit-movie.component';
 
 @NgModule({
-  declarations: [HomeComponent,LoginComponent,RegisterComponent,AddMovieComponent,DetailsComponent],
+  declarations: [HomeComponent,LoginComponent,RegisterComponent,AddMovieComponent,DetailsComponent,EditMovieComponent],
   imports: [
     CommonModule,
     ProjectRoutingModule,
