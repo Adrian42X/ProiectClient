@@ -8,13 +8,17 @@ export class UserService {
   users:User[]=[
     {
       Id:1,
-      Username:"Adrian",
-      Password:"parola1"
+      email:"stefan.roadevin@gmail.com",
+      password:"parola1",
+      firstName:"adi",
+      lastName:"vali"
     },
     {
       Id:2,
-      Username:"Stefan",
-      Password:"parola2"
+      email:"adiadrian@gmail.com0",
+      password:"parola2",
+      firstName:"aurel",
+      lastName:"aviaa"
     }
   ];
 
@@ -22,15 +26,16 @@ export class UserService {
 
   constructor() { }
 
-  login(user:User){
-    if(this.users.find(x=>x.Username==user.Username && x.Password==user.Password))
+  login(email:string,password:string){
+    if(this.users.find(x=>x.email==email && x.password==password))
       this.loggedUser=true;
     else
       this.loggedUser=false;
   }
 
-  register(newUser:User){
-    if(!this.users.find(x=>x.Username==newUser.Username && x.Password==newUser.Password))
-      this.users.push(newUser);
+  
+  register(user: User) {
+    this.users.push(user); 
+    console.log(user);
   }
 }
