@@ -1,7 +1,7 @@
 export interface Movie{
     Id:number;
     MainActor:string;
-    Image:string;
+    ReleaseYear:number;
     Title:string;
     Category:string;
     Rating:number

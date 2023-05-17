@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { AddMovieComponent } from '../home/add-movie/add-movie.component';
 import { DetailsComponent } from '../home/details/details.component';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [HomeComponent,LoginComponent,RegisterComponent,AddMovieComponent,DetailsComponent],
@@ -24,7 +26,9 @@ import { DetailsComponent } from '../home/details/details.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NzTableModule
+    NzTableModule,
+    NzIconModule,
+    MatDialogModule
   ]
 })
 export class SharedModule { }
