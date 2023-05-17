@@ -1,0 +1,17 @@
+.register-form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .login-form-margin {
+    margin-bottom: 16px;
+  }
+  
+  .login-form-button {
+    width: 100%;
+  }
+  .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+  }
